@@ -18,7 +18,7 @@ function getHTMLTable() {
     for (var row = 0; row < tableValues.length; row++) {
         html += "<tr>";
         for (var column = 0; column < tableValues[row].length; column++) {
-            if (header == true && row == 0) {
+            if (header === true && row === 0) {
                 console.log("entering header row")
                 html += "<th style=\"border: 1px solid black;\"><b>" + tableValues[row][column] + "</b></th>";
             } else {
