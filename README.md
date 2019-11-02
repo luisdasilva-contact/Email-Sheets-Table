@@ -1,5 +1,5 @@
 ### Email Sheets Table
-A Google Apps Script program to email tables from a Google Sheets file.
+A Google Apps Script program to email the user's current selection as an HTML table from a Google Sheets file.
 
 ##### Instructions: 
 1. In a Google Sheets file, go to Tools --> Script Editor. 
