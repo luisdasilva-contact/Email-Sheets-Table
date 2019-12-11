@@ -98,4 +98,3 @@ var emailProperties = (function() {
         getEnums: getEnums,
     };  
 })();
-
