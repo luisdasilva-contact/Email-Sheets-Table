@@ -87,5 +87,3 @@ function getHTMLTable(tableValues, header) {
  */
 function sendEmails(htmlTable, emails, cc, subject, body) {
     MailApp.sendEmail(emails, subject, null, {htmlBody: body + htmlTable, cc: cc});
-};
-
