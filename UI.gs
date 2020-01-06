@@ -76,10 +76,10 @@ var UiFunctions = (function(){
 })();
 
 /*
-* HTML text to display to the user, showing them how to navigate the program. 
-* @return {string} HTML to display in the window the user will see upon clicking 
+ * HTML text to display to the user, showing them how to navigate the program. 
+ * @return {string} HTML to display in the window the user will see upon clicking 
       the Help button.
-*/
+ */
 function helpText(){
 return '<html><head><link rel=\'stylesheet\'' +
     'href=\'https://ssl.gstatic.com/docs/script/css/add-ons1.css\'></head>' +
@@ -107,8 +107,8 @@ return '<html><head><link rel=\'stylesheet\'' +
 };
 
 /*
-* Function placed in UI to activate method to display HTML content in a window. 
-*/
+ * Function placed in UI to activate method to display HTML content in a window. 
+ */
 function helpButton(){
   var HtmlOutput = HtmlService.createHtmlOutput(helpText())
                               .setWidth(700)
@@ -117,29 +117,29 @@ function helpButton(){
 };
 
 /*
-* Function placed in UI to activate method to set email list. 
-*/
+ * Function placed in UI to activate method to set email list. 
+ */
 function setEmails(){
   controller.setContent(emailProperties.getEnums().EMAILS);
 };
 
 /*
-* Function placed in UI to activate method to set CC list. 
-*/
+ * Function placed in UI to activate method to set CC list. 
+ */
 function setCC(){
   controller.setContent(emailProperties.getEnums().CC);
 }
 
 /*
-* Function placed in UI to activate method to set subject. 
-*/
+ * Function placed in UI to activate method to set subject. 
+ */
 function setSubject(){
   controller.setContent(emailProperties.getEnums().SUBJECT);
 };
 
 /*
-* Function placed in UI to activate method to set body text. 
-*/
+ * Function placed in UI to activate method to set body text. 
+ */
 function setBodyText(){
   controller.setContent(emailProperties.getEnums().BODYTEXT);
 };
@@ -149,10 +149,10 @@ function clearAllProperties(){
 };
 
 /*
-* Function to automatically build menu upon opening the document.
-* @param {Event} onOpen event containing context regarding the document upon 
+ * Function to automatically build menu upon opening the document.
+ * @param {Event} onOpen event containing context regarding the document upon 
       opening.
-*/
+ */
 function onOpen(e){
   UiFunctions.getUi
       .createMenu('Email Table')
