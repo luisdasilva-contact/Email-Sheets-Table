@@ -1,5 +1,5 @@
 /*
- * controller object to act as a mediator between the UI and user-stored 
+ * controller object acting as a mediator between the UI and user-stored 
       properties.
  * @return {function} setContent Sets the user's entered content as a property 
       via Google's Properties Service, dependant upon an entered enum. 
