@@ -1,4 +1,4 @@
-/*
+/**
  * Evaluates the given 2D array, ensuring there are at least 2 rows and 2 
       columns.
  * @param {Array<string>} tableValues The 2D array to analyze for at least 2 
@@ -22,7 +22,7 @@ function evaluateSelectionForValidChart(tableValues) {
   return true;
 };
 
-/*
+/**
  * Sends the currently-selected range as a chart in an email. Includes 
       validation for a valid chart and list of emails.
  */
@@ -62,7 +62,7 @@ function sendTable() {
   };
 };
 
-/*
+/**
  * Given a 2D array, creates an HTML representation as a table.
  * @param {Array<string>} tableValues 2D array of values that will be built 
       as a chart.
@@ -93,7 +93,7 @@ function getHTMLTable(tableValues, header) {
   return html;
 };
 
-/* 
+/** 
  * Sends an email with given parameters.
  * @param {string} HtmlTable HTML string of the table.
  * @param {Array<string>} emails List of emails to send the table to.  
