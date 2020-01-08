@@ -1,4 +1,4 @@
-/*
+/**
  * Module used to display content via Google Apps Script's built-in UI features. 
       Contains the following functions: 
  * @return {function} displayAlert Displays a window with text to the user.
@@ -12,7 +12,7 @@
 var UiFunctions = (function(){
   var Ui = SpreadsheetApp.getUi();
   
-  /*
+  /**
    * Displays a window with text to the user.
    * @param {string} alertText The text to display to the user.
    */
@@ -20,7 +20,7 @@ var UiFunctions = (function(){
       Ui.alert(alertText);
   };
   
-  /*
+  /**
    * Displays a text field to the user, allowing them to submit text, or cancel.
    * @param {string} promptText The text to display to the user above the text 
         field.
@@ -37,7 +37,7 @@ var UiFunctions = (function(){
       };
   };
   
-  /*
+  /**
    * Displays a window with text to the user, allowing them to select "YES", 
         "NO", or "CANCEL".
    * @param {string} promptText The text to display to the user above the "YES", 
@@ -57,7 +57,7 @@ var UiFunctions = (function(){
       };
   };
   
-  /*
+  /**
    * Displays a window with text to the user, taking HTML content.
    * @param {string} HTML content to display in the window.
    * @param {string} title The text to display as the window's title.
@@ -75,7 +75,7 @@ var UiFunctions = (function(){
 };
 })();
 
-/*
+/**
  * HTML text to display to the user, showing them how to navigate the program. 
  * @return {string} HTML to display in the window the user will see upon clicking 
       the Help button.
@@ -106,7 +106,7 @@ return '<html><head><link rel=\'stylesheet\'' +
     '</font></body></html>';
 };
 
-/*
+/**
  * Function placed in UI to activate method to display HTML content in a window. 
  */
 function helpButton(){
@@ -116,39 +116,42 @@ function helpButton(){
   UiFunctions.displayHTMLAlert(HtmlOutput, "Help");
 };
 
-/*
+/**
  * Function placed in UI to activate method to set email list. 
  */
 function setEmails(){
   controller.setContent(emailProperties.getEnums().EMAILS);
 };
 
-/*
+/**
  * Function placed in UI to activate method to set CC list. 
  */
 function setCC(){
   controller.setContent(emailProperties.getEnums().CC);
 }
 
-/*
+/**
  * Function placed in UI to activate method to set subject. 
  */
 function setSubject(){
   controller.setContent(emailProperties.getEnums().SUBJECT);
 };
 
-/*
+/**
  * Function placed in UI to activate method to set body text. 
  */
 function setBodyText(){
   controller.setContent(emailProperties.getEnums().BODYTEXT);
 };
 
+/**
+ * Function to clear all properties stored in the document.
+ */
 function clearAllProperties(){
   controller.clearAllProperties();
 };
 
-/*
+/**
  * Function to automatically build menu upon opening the document.
  * @param {Event} onOpen event containing context regarding the document upon 
       opening.
