@@ -1,4 +1,4 @@
-/*
+/**
  * controller object acting as a mediator between the UI and user-stored 
       properties.
  * @return {function} setContent Sets the user's entered content as a property 
@@ -7,7 +7,7 @@
       properties related to this application.
  */
 var controller = (function() {
-  /*
+  /**
    * Sets the user's entered content as a property via Google's Properties 
         Service, dependant upon an entered enum. 
    * @param {string} The value that will be set as a property in the Properties 
@@ -76,7 +76,7 @@ var controller = (function() {
     };
   };
 
-  /*
+  /**
    * Sets any properties related to emails. Includes regex check for valid list 
         of emails.
    * @param {string} UiPromptString The string that will be displayed to the 
@@ -108,7 +108,7 @@ var controller = (function() {
     };
   };
 
-  /*
+  /**
    * Sets any properties related to text.
    * @param {string} UiPromptString The string that will be displayed to the 
         user in the window, prompting them to enter text.
@@ -123,7 +123,7 @@ var controller = (function() {
     };
   }
 
-  /*
+  /**
    * Deletes all of the document's properties related to this application.
    */
   function clearAllProperties() {
